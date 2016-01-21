@@ -88,7 +88,11 @@ var RepoList = function (_React$Component) {
           return _react2.default.createElement(
             'li',
             { key: r.id },
-            r.name
+            _react2.default.createElement(
+              'a',
+              { href: r.html_url },
+              r.name
+            )
           );
         })
       );
@@ -135,9 +139,6 @@ var SearchForm = function (_React$Component) {
   }
 
   _createClass(SearchForm, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {}
-  }, {
     key: "onClick",
     value: function onClick() {
       var value = this.refs.text.value;
@@ -231,9 +232,9 @@ var TopPage = function (_React$Component) {
         'div',
         null,
         _react2.default.createElement(
-          'div',
+          'h1',
           null,
-          'Hello!!!'
+          'Repository Finder'
         ),
         _react2.default.createElement(_searchForm2.default, { onSubmit: function onSubmit(text) {
             return _this2.onSubmit(text);

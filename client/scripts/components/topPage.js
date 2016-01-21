@@ -19,7 +19,7 @@ class TopPage extends React.Component {
   render() {
     return (
       <div>
-        <div>Hello!!!</div>
+        <h1>Repository Finder</h1>
         <SearchForm onSubmit={(text) => this.onSubmit(text)}/>
         <RepoList />
       </div>

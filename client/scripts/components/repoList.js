@@ -6,7 +6,7 @@ class RepoList extends React.Component {
   render() {
     return (
       <ul>
-        { this.props.repositories.map(r => <li key={r.id}>{ r.name }</li>) }
+        { this.props.repositories.map(r => <li key={r.id}><a href={r.html_url}>{ r.name }</a></li>) }
       </ul>
     );
   }

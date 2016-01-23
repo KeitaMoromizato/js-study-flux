@@ -81,7 +81,7 @@ FluxはReactと同様に、単方向のデータフローを実現するため�
 
 fluxについて調べていると、以下の図をよく見かけます。
 
-<img src="./docs/img/flux.png" style="width: 100%;" />
+<img src="./docs/flux.png" style="width: 100%;" />
 
 ざっくり説明すると次のような位置付けとなっています。ただ、この説明を見ただけではよく分からないので実際に書いてみるのが一番でしょう。
 * Clickイベントなどのユーザアクションが発生したタイミングで、Actionをdispatch(発行)する
